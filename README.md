@@ -1,7 +1,7 @@
 # ARP TOOLS
 *Python 3.8*
 
----
+
 
 **ARP Protocol :** ARP is the Address Resolution Protocol, it is used to discover the MAC Address associated with an IP Address in the Link Layer.
 
@@ -18,7 +18,7 @@ HOST C - 192.168.219.124 - 08:00:27:10:51:F5
 HOST D - 192.168.219.156 - 08:00:27:10:51:F6
 
 ## Normal Operation
----
+
 
 * Host A has the IP Address of Host C and to send a packet to that Host, it requires the MAC Address
 * Host A sends out an ARP Broadcast, asking **Who is 192.168.219.124?**
@@ -27,13 +27,13 @@ HOST D - 192.168.219.156 - 08:00:27:10:51:F6
 * Any data addressed to Host C will be sent to that MAC Address from them on.
 
 ## arp-poison.py
----
+
 **ARP Cache Poisoning deals with corrupting the ARP Cache of the target host, by providing it false data about the MAC Address of the Target**
 
 * Now imagine Host B decides to be poison the ARP-Cache of Host A and steal all the data addressed to Host C.
 
 ### Noisy Mode 
----
+
 **Gratuitous ARP** is an ARP Response without an ARP Request, it can be useful in some cases, but in our case, it is a security risk.
 
 * Host B send a Gratutious ARP response packet to the Host A.
@@ -89,7 +89,7 @@ For this too, you can optionally provide a target or send a response to all the 
 ```
 
 ## arp-watcher.py
----
+
 **Logging Tool for ARP Anomaly Detection**
 
 * Logs all the ARP Packets sent and received.
