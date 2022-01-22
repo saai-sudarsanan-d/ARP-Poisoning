@@ -17,6 +17,9 @@ HOST C - 192.168.219.124 - 08:00:27:10:51:F5
 
 HOST D - 192.168.219.156 - 08:00:27:10:51:F6
 
+## Normal Operation
+---
+
 * Host A has the IP Address of Host C and to send a packet to that Host, it requires the MAC Address
 * Host A sends out an ARP Broadcast, asking **Who is 192.168.219.124?**
 * Host B, C and D receive the broadcast, and B and D immediately find out that the packet was not addressed to them, and drop it. Host C replies saying, **192.168.219.124 is at 08:00:27:10:51:F5**
