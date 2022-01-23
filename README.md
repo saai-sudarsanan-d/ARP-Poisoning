@@ -50,7 +50,7 @@ In the tool, I have made it possible to either address it to either one ip (Targ
 ---
 
 * Host B sniffs the network and waits for Host A's to ARP Cache Lifecycle to end and send out a new ARP Request to Host C.
-* Host B sends out a reply, by reading the packet's destination and spoofing the packet and sending it before Host C and successfully poisons the ARP Cache of Host A with just one ARP Response and without avoiding detection.
+* Host B sends out a reply, by reading the packet's destination and spoofing the packet and sending it before Host C and successfully poisons the ARP Cache of Host A with just one ARP Response and hence avoiding detection.
 
 For this too, you can optionally provide a target or send a response to all the ARP requests that were sniffed.
 
